@@ -6,6 +6,16 @@ REST APIs are accessible through HTTP, therefore, it is necessary to identify th
 respective methods where the resources they expose can be accessed. 
 These URIs are essentially paths, and can be contextual, such as listing all the customers of a particular book: /books/1234567890/customers
 
+** I Use Subresources to Show Relationships 
+
+/customers/{id}
+/books/{id}
+
+I also include aggregations as subresources. That is, a belongs to relationship. 
+Using this relationship rule, a book belongs to a customer, so the path would look like this:
+
+/customers/{id}/books/{id}
+
 
 Next, I associate a particular HTTP method to each one of these paths, where each method has a particular meaning.
 The main four HTTP methods along with their functionalities are:
