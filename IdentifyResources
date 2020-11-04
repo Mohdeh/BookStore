@@ -1,5 +1,5 @@
-# STEP 1 - Identify BOOK Resource as a DB Resource
+## STEP 1 - Identify BOOK Resource as a DB Resource
 
-The BOOK resource identifies the data entities that the user interface will need to display to the users so that they can interact with the application 
+The BOOK DB resource (book: id, title, author) identifies the data entities that the user interface will need to display to the users so that they can interact with the application 
 and perform all the necessary use cases.
 
