@@ -1,8 +1,10 @@
+## DB BOOK resource (book: id, title, author)
+
 After identifying the BOOK resources to expose, I identify their respective locations.
 
 REST APIs are accessible through HTTP, therefore, it is necessary to identify the URIs and the 
 respective methods where the resources they expose can be accessed. 
-These URIs are essentially paths, and can be contextual, such as listing all the customers of a particular book: /books/123456789/customers
+These URIs are essentially paths, and can be contextual, such as listing all the customers of a particular book: /books/1234567890/customers
 
 
 Next, I associate a particular HTTP method to each one of these paths, where each method has a particular meaning.
@@ -16,3 +18,28 @@ DELETE - Deletes an existing resource
 
 For instance, creating a new book, is represented by: 
 A POST on /books.
+
+
+And the parameters to pass on the POST invocation should be the following JSON:
+
+{
+  "title": "Oliver Twist",
+  "author": "Charles Dickens"
+}
+If successful, this invocation should provide the following JSON response, but it is optional:
+
+{
+  "id": 1234567890,
+  "title": "Oliver Twist",
+  "author": "Charles Dickens"
+}
+
+
+Consequently, invoking a GET on /books/1234567890, I obtain a similar JSON response, describing a possible representation of the book with object id 1234567890:
+
+	
+{
+  "id": 1234567890,
+  "title": "Oliver Twist",
+  "author": "Charles Dickens"
+}
