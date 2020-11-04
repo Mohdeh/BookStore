@@ -1,0 +1,27 @@
+// ##  IMPLEMENT THE IDENTIFIED ENDPOINTS
+
+/*
+Now that the necessary endpoints have been identified, I can implement them on the server side, 
+consuming the domain information in order to produce JSON responses to invocations on those endpoints. 
+I can make use of different libraries that facilitate this task.
+
+Afterwards, to expose a particular endpoint, I utilize available context class, 
+from which to extend a new class as follows:
+*/
+
+// Adding a class-level @ApplicationPath annotation to set the base URI.
+@ApplicationPath("/webapi")
+public class BookResource extends Application {
+
+  @POST
+  @Path("/books")
+  @Produces(MediaType.APPLICATION_JSON)
+  public String createOrder(JsonElement jsonElement) {
+    accessControl("#customers");
+    return create(jsonElement);
+  }
+
+  // We can continue to extracts other parameters from the POST form data ...
+
+}
+
