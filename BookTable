@@ -1,0 +1,12 @@
+## Design the Book table (book: id, title, author) with appropriate indexes using MySQL.
+
+
+sql = """
+CREATE TABLE Book (
+  id bigint(20) NOT NULL,
+  title varchar(255) NOT NULL,
+  author varchar(255) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+""".strip()
+
