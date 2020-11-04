@@ -1,0 +1,38 @@
+## Design the tables Customer & CustomerBook which will store books belonging to a customer
+## DB BOOK resource (book: book_id, title, author)
+
+
+Sample Table: Customer
+
+cusromer_id  name             city        ssn4
+-----------  ----------       ----------  ----------
+1001         Max Hawkins      Los Angeles 1234
+1002         Keira Knite      Paris       5437
+1005         Peter Main       London      9854
+1006         Mark Lyon        Lisbon      0124
+1003         Lauren Hen       Sidney      3372
+1007         Paul Adam        Rome        5524
+
+
+
+Sample Table: CustomerBook
+
+
+book_id     title                 author            customer_id
+----------  ----------            ----------        -----------
+70007       Oliver Twist          Charles Dickens   1007         
+70002       Les Misérables        Victor Hugo       1005         
+70009       Harry Potter          J.K. Rowling      1001         
+70004       Pride and Prejudice   Jane Austen       1003         
+70001       Beloved               Toni Morrison     1002         
+70005       On the Road           Jack Kerouac      1001         
+70008       Animal Farm           George Orwell     1007         
+70010       The Trial             Franz Kafka       1006         
+70003       Atonement             Ian McEwan        1003         
+70014       Nostromo              Joseph Conrad     1002         
+70011       Pale Fire             Vladimir Nabokov  1005         
+70013       Madame Bovary         Gustave Flaubert  1001         
+
+
+
+
