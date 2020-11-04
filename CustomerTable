@@ -1,1 +1,12 @@
+## Design the CUSTOMER table (customer: customer_id, name, city, ssn4) with appropriate indexes using MySQL.
 
+
+sql = """
+CREATE TABLE Customer (
+  customer_id bigint(20) NOT NULL,
+  name varchar(255) NOT NULL,
+  city varchar(255) NOT NULL,
+  ssn4 bigint(20) NOT NULL,
+  PRIMARY KEY (customer_id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+""".strip()
