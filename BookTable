@@ -6,7 +6,8 @@ CREATE TABLE Book (
   id bigint(20) NOT NULL,
   title varchar(255) NOT NULL,
   author varchar(255) NOT NULL,
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
+  FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 """.strip()
 
