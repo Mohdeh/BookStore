@@ -36,7 +36,8 @@ public class BookAdapter implements JsonAdapter<Book> {
     String author = json.get("author");
     return book.update(title, author);
   }
-		
+
+	
   @Override
   public JsonElement view(Book book, JsonBuilder ctx) {
     final JsonObject json = new JsonObject();
