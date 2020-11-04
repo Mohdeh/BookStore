@@ -16,7 +16,8 @@ Here is a case of the BookAdapter (DB Book resource (book: id, title, author)) t
 i.e. all three JsonViewer, JsonCreator and JsonUpdater interfaces:
 */
 
-
+// The annotation @DefaultJsonAdapter(Book.class) registers this Adapter class in the the JSON library, 
+// so that it knows what adapter to use when handling a object of the Book class.
 @DefaultJsonAdapter(Book.class)
 public class BookAdapter implements JsonAdapter<Book> {
 
