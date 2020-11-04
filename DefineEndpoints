@@ -1,0 +1,18 @@
+After identifying the BOOK resources to expose, I identify their respective locations.
+
+REST APIs are accessible through HTTP, therefore, it is necessary to identify the URIs and the 
+respective methods where the resources they expose can be accessed. 
+These URIs are essentially paths, and can be contextual, such as listing all the customers of a particular book: /books/123456789/customers
+
+
+Next, I associate a particular HTTP method to each one of these paths, where each method has a particular meaning.
+The main four HTTP methods along with their functionalities are:
+
+GET - Reads an existing resource
+POST - Creates a new resource
+PUT - Updates an existing resource
+DELETE - Deletes an existing resource
+
+
+For instance, creating a new book, is represented by: 
+A POST on /books.
