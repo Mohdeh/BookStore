@@ -1,5 +1,5 @@
 ## Design the tables Customer & CustomerBook which will store books belonging to a customer
-## DB BOOK resource (book: book_id, title, author)
+## DB BOOK resource (book: id, title, author)
 
 
 Sample Table: Customer
@@ -18,7 +18,7 @@ cusromer_id  name             city        ssn4
 Sample Table: CustomerBook
 
 
-book_id     title                 author            customer_id
+id          title                 author            customer_id
 ----------  ----------            ----------        -----------
 70007       Oliver Twist          Charles Dickens   1007         
 70002       Les Misérables        Victor Hugo       1005         
